@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Home | ADAMAST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="company-name">Adamast</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+    </div>
+    </nav>
+
+    <section class="video-section">
+        <video autoplay muted loop playsinline src="Running in nature.mov"></video>
+    <div class="overlay">
+            <img src="logo.png" alt="Logo 1" class="overlay-logo">
+            <p class="overlay-text">High-performance proprietary rubber compounds for extreme sports</p>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <video autoplay muted loop playsinline src="Rubber factory.mov"></video>
+        <div class="overlay">
+            <img src="logo2.png" alt="Logo 2" class="overlay-logo">
+            <p class="overlay-text">Premium outsole manufacturing, molding, tooling and prototyping</p>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <video autoplay muted loop playsinline src="Porto Timelapse.mov"></video>
+        <div class="overlay">
+            <img src="logo3.png" alt="Logo 3" class="overlay-logo">
+            <p class="overlay-text">European craftsmanship from the heart of Portugal’s footwear hub</p>
+        </div>
+    </section>
+
+    <a href="contact.html" class="contact-btn-fixed">Contact Our Team</a>
+
+<script>
+    window.onscroll = function() {
+        const nav = document.querySelector('.navbar');
+        // If you scroll more than 50px, add the 'scrolled' class
+        if (window.scrollY > 100) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    };
+</script>
+
+</body>
+</html>

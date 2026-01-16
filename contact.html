@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ADAMAST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contagt-page-white"> 
+
+    <nav class="navbar contact-nav">
+        <div class="nav-left">
+            <span class="company-name">Adamast</span>
+        </div>
+        <div class="nav-center">
+            <a href="index.html">
+                <img src="logo.png" alt="Home" class="nav-logo-btn">
+            </a>
+        </div>
+        <div class="nav-right"></div> </nav>
+
+    <main class="full-split-container">
+        
+        <section class="info-side">
+            <h1 class="contact-title">Outsole Development & <br>Manufacturing Inquiries</h1>
+            <p class="contact-description">
+                Contact our Porto-based team for technical specifications, MOQ inquiries, or to request a sample of our latest compound. Available for private label manufacturing and technical licensing.
+            </p>
+            </section>
+
+        <section class="form-side">
+            <form action="https://api.web3forms.com/submit" method="POST" class="technical-form">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                <div class="name-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" name="first_name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" name="last_name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Nature of Inquiry</label>
+                    <select name="inquiry_type" required>
+                        <option value="" disabled selected>Please select...</option>
+                        <option value="compound">Custom Compound Development (Adamast Tech)</option>
+                        <option value="manufacturing">Outsole Manufacturing & Vulcanization</option>
+                        <option value="private_label">Private Label / Full-Shoe Production</option>
+                        <option value="tooling">Molding, Tooling & Prototyping</option>
+                        <option value="branding">Ingredient Branding & Licensing Inquiries</option>
+                        <option value="sample">Sample Request / Technical Data Sheets (TDS)</option>
+                        <option value="sustainability">Sustainability & Bio-Based Material Solutions</option>
+                        <option value="other">Other (Please specify below)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Message / Specifications</label>
+                    <textarea name="message" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn-dark">Submit Inquiry</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

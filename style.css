@@ -45,7 +45,7 @@ body {
 /* General Reset */
 body {
     margin: 0;
-    font-family: lasFlores;
+    font-family: LasFlores;
     background-color: #f4f4f4;
 }
 
@@ -76,7 +76,11 @@ body {
 }
 
 /* Text Navbar (Homepage)*/
-.company-name { font-weight: bold; font-size: 3rem; }
+.company-name { 
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: LasFlores;
+}
 
 /* This handles the container spacing */
 .nav-links {
@@ -298,4 +302,5 @@ video {
 
 .submit-btn-dark:hover {
     background: #333;
+
 }

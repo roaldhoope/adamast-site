@@ -273,7 +273,7 @@ video {
 }
 .technical-form label {
     display: block;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 8px;
@@ -293,7 +293,8 @@ video {
     width: 100%; /* All fields (including dropdown) now stretch to their container */
     padding: 12px;
     border: 1px solid #e0e0e0;
-    font-family: inherit;
+    font-family: 'UniversLT';
+    font-size: 1rem; 
     font-weight: 300;
     background: #fff;
     outline: none;
@@ -372,3 +373,4 @@ video {
     color: #333;
     margin-bottom: 15px;
 }
+

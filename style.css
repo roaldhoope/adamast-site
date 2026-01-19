@@ -5,7 +5,7 @@
 /* 1. Define the font */
 @font-face {
     font-family: 'LasFLores'; /* You can name it whatever you want */
-    src: url('./fonts/LasFlores.otf') format('opentype'); /* Check your file extension! */
+    src: url('LasFlores.otf') format('opentype'); /* Check your file extension! */
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@
 /* Light Condensed */
 @font-face {
     font-family: 'UniversLT';
-    src: url('./fonts/UniversLTStd-LightCn.otf') format('opentype');
+    src: url('UniversLTStd-LightCn.otf') format('opentype');
     font-weight: 300; /* We assign 'Light' to 300 */
     font-style: normal;
 }
@@ -22,7 +22,7 @@
 /* Standard (Regular) */
 @font-face {
     font-family: 'UniversLT';
-    src: url('./fonts/UniversLTStd-Regular.otf') format('opentype');
+    src: url('UniversLTStd-Regular.otf') format('opentype');
     font-weight: 400; /* Standard/Regular is 400 */
     font-style: normal;
 }
@@ -30,7 +30,7 @@
 /* Bold Condensed */
 @font-face {
     font-family: 'UniversLT';
-    src: url('./fonts/UniversLTStd-BoldCn.otf') format('opentype');
+    src: url('UniversLTStd-BoldCn.otf') format('opentype');
     font-weight: 700; /* Bold is 700 */
     font-style: normal;
 }
@@ -304,3 +304,4 @@ video {
     background: #333;
 
 }
+

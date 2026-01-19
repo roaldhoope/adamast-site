@@ -1,3 +1,8 @@
+
+/* =========================================
+   FONTS
+   ========================================= */
+
 * {
     box-sizing: border-box;
 }
@@ -22,7 +27,7 @@
 /* Standard (Regular) */
 @font-face {
     font-family: 'UniversLT';
-    src: url('UniversLTStd-Regular.otf') format('opentype');
+    src: url('UniversLTStd.otf') format('opentype');
     font-weight: 400; /* Standard/Regular is 400 */
     font-style: normal;
 }
@@ -39,17 +44,22 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'UniversLT', sans-serif; /* sans-serif is the backup */
+    font-family: 'UniversLT'; /* sans-serif is the backup */
 }
 
 /* General Reset */
 body {
     margin: 0;
-    font-family: LasFlores;
+    font-family: lasFlores;
     background-color: #f4f4f4;
 }
 
-/* Navbar (Homepage) */
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+   
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -67,7 +77,7 @@ body {
 
 }
 
-/* 2. The state after scrolling */
+/* Navbar after scrolling */
 .navbar.scrolled {
     /* Turns into a solid white (or very nearly solid) */
     background: rgba(255, 255, 255, 0.95); 
@@ -75,14 +85,10 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Text Navbar (Homepage)*/
-.company-name { 
-    font-weight: bold;
-    font-size: 3rem;
-    font-family: LasFlores;
-}
+/* Text Navbar */
+.company-name { font-weight: bold; font-size: 3rem; }
 
-/* This handles the container spacing */
+/* ABOUT and CONTACT links container spacing */
 .nav-links {
     display: flex;
     gap: 30px; 
@@ -90,7 +96,7 @@ body {
     padding-right: 40px;
 }
 
-/* This handles the actual look of the text */
+/* Look of the ABOUT and CONTACT links (navbar) */
 .nav-links a {
     font-family: 'UniversLT', sans-serif;
     font-weight: bold;
@@ -100,7 +106,7 @@ body {
     text-transform: uppercase; /* Optional: gives it that clean industrial look */
 }
 
-/* Section Container */
+/* Video section Container */
 .video-section {
     position: relative;
     width: 100%;
@@ -149,6 +155,8 @@ video {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
     margin-top: 10px;
 }
+
+/* Contact Our Team Button */
 .contact-btn-fixed {
     position: fixed;
     bottom: 30px;
@@ -172,9 +180,14 @@ video {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
 /* Contact Page Layout */
 .contact-page-white {
-    background: white;
+    background: rgb(243, 243, 243);
     margin: 0;
     overflow-x: hidden;
 }
@@ -226,7 +239,7 @@ video {
 
 /* Typography Contact Page*/
 .contact-title {
-    font-family: 'UniversLT', sans-serif;
+    font-family: 'UniversLT';
     font-weight: 700;
     font-size: 2.5rem;
     color: #1a1a1a;
@@ -302,6 +315,60 @@ video {
 
 .submit-btn-dark:hover {
     background: #333;
-
 }
 
+/* =========================================
+   ABOUT PAGE 
+   ========================================= */
+
+/* 1. Sets the background and prevents scrolling */
+.about-page-body {
+    background: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Keeps everything on one screen */
+}
+
+/* 2. Forces the Navbar to be solid and on top */
+.about-page-body .navbar {
+    background: rgba(255, 255, 255, 0.95); 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ececec; /* Subtle divider */
+}
+
+/* 3. Layout for the two text boxes */
+.about-page-body .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns text to the top */
+    gap: 140px;               /* Space between the two columns */
+    max-width: 1400px;
+    margin: 200px auto 0;    /* Pushes content down so it starts below Navbar */
+    padding: 0 60px;
+    color:#fcfcfc;
+}
+
+/* 4. Individual box styling */
+.about-page-body .text-box {
+    flex: 1;
+    color:#fcfcfc;
+}
+
+.about-page-body .section-header {
+    font-family: 'UniversLT', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.about-page-body .text-box p {
+    font-family: 'UniversLT', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+}

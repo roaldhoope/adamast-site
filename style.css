@@ -111,8 +111,7 @@ body {
 
 /* The Brand name text scaling */
 .company-name { 
-    font-family: 'Las Flores';
-    font-weight: bold; 
+    font-family: 'LasFlores'; 
     /* Min: 24px | Scales at 5% of screen width | Max: 3rem */
     font-size: clamp(24px, 5vw, 3rem) !important; 
     white-space: nowrap; 
@@ -496,4 +495,5 @@ video {
         padding-bottom: 20px !important;
     }
 }
+
 
